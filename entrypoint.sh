@@ -24,7 +24,7 @@ if [ "${ENVIRONMENT}" ]; then
     (cd /etc/nginx/conf.d/ && \
     mv ${ENVIRONMENT}_backend.conf.UNUSED ${ENVIRONMENT}_backend.conf && \
     mv ${ENVIRONMENT}_frontend.conf.UNUSED ${ENVIRONMENT}_frontend.conf)
-    echo "using ${ENVIRONMENT} config files")
+    echo "using ${ENVIRONMENT} config files"
 fi
 
 # Launch nginx
